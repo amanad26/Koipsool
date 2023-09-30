@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoreActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="More"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/terms_and_condition_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/terms_img" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Terms And Condition "
+                android:textColor="@color/black_semi_transparent"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#E4E4E4"/>
+
+        <LinearLayout
+            android:id="@+id/privacy_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="24dp"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/privacy_img" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Privacy policy "
+                android:textColor="@color/black_semi_transparent"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#E4E4E4"/>
+
+        <LinearLayout
+            android:id="@+id/about_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="About"
+                android:textColor="@color/black_semi_transparent"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#E4E4E4"/>
+
+        <LinearLayout
+            android:id="@+id/logout_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Logout"
+                android:textColor="@color/black_semi_transparent"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#E4E4E4"/>
+
+        <LinearLayout
+            android:id="@+id/delete_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                app:tint="@color/red"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/logout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Delete Account"
+                android:textColor="@color/red"
+                android:textFontWeight="600"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#E4E4E4"/>
+    </LinearLayout>
+</LinearLayout>

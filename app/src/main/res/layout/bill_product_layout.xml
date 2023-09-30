@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <com.skydoves.elasticviews.ElasticCardView
+        android:id="@+id/my_bids_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdpq"
+        android:layout_marginBottom="@dimen/_3sdpq"
+        app:cardBackgroundColor="@color/grey_4001"
+        app:cardCornerRadius="@dimen/_5sdpq">
+
+        <LinearLayout
+            android:id="@+id/my_bids_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdpq"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/my_bid_car_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:padding="@dimen/_5sdpq"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/company_logo"
+                        app:cardCornerRadius="@dimen/_10sdpq"
+                        app:riv_corner_radius="10dp">
+
+                    </com.makeramen.roundedimageview.RoundedImageView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdpq"
+                        android:layout_marginTop="@dimen/_5sdpq"
+                        android:layout_marginBottom="@dimen/_5sdpq"
+                        android:background="@drawable/custom_bg_butnn"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_7sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Edit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/edit"
+                        android:background="@drawable/custom_bg_butnn"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_8sdp"
+                        android:id="@+id/remove"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="Remove"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight=".75"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bill_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_medium"
+                    android:maxLines="2"
+                    android:text="Poramin Table"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdpq"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/my_car_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:drawableLeft="@drawable/ic_baseline_circle"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:fontFamily="@font/roboto_regular"
+                        android:singleLine="true"
+                        android:text="Quantity :"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:id="@+id/bill_product_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:fontFamily="@font/roboto_regular"
+                        android:singleLine="true"
+                        android:text="5 Boxes"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdpq"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:drawableLeft="@drawable/ic_baseline_circle"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:fontFamily="@font/roboto_regular"
+                        android:singleLine="true"
+                        android:text="MRP :"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:id="@+id/bill_product_price"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:fontFamily="@font/roboto_regular"
+                        android:singleLine="true"
+                        android:text="Rs.150"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdpq"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:drawableLeft="@drawable/ic_baseline_circle"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:fontFamily="@font/roboto_regular"
+                        android:singleLine="true"
+                        android:text="Selling price :"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:id="@+id/bill_product_sellingPrice"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:fontFamily="@font/roboto_regular"
+                        android:singleLine="true"
+                        android:text="2000"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/grey_600" />
+
+
+                    <RelativeLayout
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+
+                        <TextView
+                            android:id="@+id/my_bid_car_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="Total Amount: 375"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.skydoves.elasticviews.ElasticCardView>
+
+</LinearLayout>

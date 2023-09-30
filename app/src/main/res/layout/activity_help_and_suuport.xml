@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpAndSuuportActivity">
+
+
+    <RelativeLayout
+        android:id="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Help And Support"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/_15sdp"
+        android:layout_marginTop="9dp">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackground"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="Heading"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textColor="@color/edttxt_color"
+                    android:textSize="@dimen/_13sdp" />
+
+                <EditText
+                    android:id="@+id/query_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackground"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="Your Query"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textColor="@color/edttxt_color"
+                    android:textSize="@dimen/_13sdp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdpq"
+                android:layout_marginTop="@dimen/_20sdpq">
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/submit_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/gradient_background"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <LinearLayout
+                android:id="@+id/signIn_signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_4sdpq"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/i_have_an_account"
+                    android:textColor="#333348"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdpq"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/Log_in"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_11ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

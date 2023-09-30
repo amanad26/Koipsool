@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.koipsool_new">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Villagewale"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ObjectDetectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LanuagedetectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageLabelActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ViewBillPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chemist.ClientsBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.ViewOrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chemist.UpdateProfileChemistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chemist.ChemistProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.ViewApplicatnsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.medical.SavedJobListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.pharma.ApplicationPharmaActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.medical.MyApplicationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.pharma.UpdateJobdetailsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.medical.AskQuestionsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.medical.UpdateMedicalProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.medical.ContinueApplicationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.medical.JobInternshipDetailsMedicalActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.UpdateResumeProjectActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.AddResumeProjectActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.AddProtfolioActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.AddResumeSkillActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.UpdateResumeJobActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.UpdateEducationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.pharma.UpdateCompanyProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.AddJobResumeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.resume.AddEducationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.pharma.MyCouponsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.chemist.ChemistLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chemist.ChemistSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InternshipSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chemist.ChatchemistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewJobDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewProductAllDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chemist.RequestBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RewardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.CouponsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.ClientsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.ResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.BrowseInternshipViewAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.BrowseInternshipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.MyBillingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMrReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.MadicalReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.MyPastApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.BrowseJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewinternshipDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.GstDetailsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.pharma.BillingProductDetailActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.pharma.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.MyJobsAndInternshipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.PharmaHomeAllDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.chemist.ChemistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.NewPrescribeSubmitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.NewPrescriberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.FinalWorkReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.WorkReportNewRetailerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.HomeMedicalResActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.WorkReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.ChangePhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.MyProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.CreateBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.AddMembersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.MyTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.PostMrInternshipJobActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.MedicalRepresentativesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.MedicalLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpAndSuuportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermAndConditionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.medical.MedicalSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.PharmaLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.MyBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedcastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SucessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.pharma.PharmaSignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OtpVerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.pharma.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="langid" />
+    </application>
+
+</manifest>

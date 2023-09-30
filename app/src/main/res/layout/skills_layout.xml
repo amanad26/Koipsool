@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/skill_linear"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/unselected_skils"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/skill_image"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_baseline_add"/>
+
+        <TextView
+            android:id="@+id/skils_name"
+            android:drawableTint="@color/grey"
+            android:drawablePadding="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:text="Android Development"
+            android:paddingVertical="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.resume.MyResumeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PERSONAL DETAILS"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/my_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minakshi Bisen"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/my_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="demoemail104@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/my_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="+91 9876543210"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/my_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Indore"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EDUCATION"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ProgressBar
+                    android:id="@+id/education_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/education_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:layout_marginVertical="@dimen/_3sdp" />
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/add_education_tv"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="@dimen/_6sdp"-->
+                <!--                        android:text="+ Add education"-->
+                <!--                        android:textColor="@color/ightblue"-->
+                <!--                        android:textSize="@dimen/_12sdp" />-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JOBS"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <ProgressBar
+                    android:id="@+id/job_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/job_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:layout_marginVertical="@dimen/_5sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INTERNSHIP"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <ProgressBar
+                    android:id="@+id/internship_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/internship_recycler"
+                    android:layout_width="match_parent"
+                    android:overScrollMode="never"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp" />
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/add_internship_details"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                        android:text="+ Add internship"-->
+                <!--                        android:textColor="@color/ightblue"-->
+                <!--                        android:textSize="@dimen/_12sdp" />-->
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACADEMIC/PERSONAL PROJECTS"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <ProgressBar
+                    android:id="@+id/project_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/project_recycler"
+                    android:layout_width="match_parent"
+                    android:overScrollMode="never"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp" />
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/add_project_details"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                        android:text="+ Add Project"-->
+                <!--                        android:textColor="@color/ightblue"-->
+                <!--                        android:textSize="@dimen/_12sdp" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKILLS"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <ProgressBar
+                    android:id="@+id/skill_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/skill_recycler"
+                    android:layout_width="match_parent"
+                    android:overScrollMode="never"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_5sdp" />
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/add_skill_tv"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="@dimen/_5sdp"-->
+                <!--                        android:text="+ Add skills"-->
+                <!--                        android:textColor="@color/ightblue"-->
+                <!--                        android:textSize="@dimen/_12sdp" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PORTFOLIO/WORK SAMPLES"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:id="@+id/blog_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Blog Link "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/my_blog_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/ightblue"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/github_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/github_link"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/my_github_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/ightblue"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/play_store_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Play Store Link "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+
+                        android:id="@+id/my_play_store_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/ightblue"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/behance_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Behance Link "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/my_behance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/ightblue"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/other_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Other Link "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/my_other_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text=""
+                        android:textColor="@color/ightblue"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/add_protfolio_tv"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="@dimen/_10sdp"-->
+                <!--                        android:text="@string/add_portfolio_work_samples"-->
+                <!--                        android:textColor="@color/ightblue"-->
+                <!--                        android:textSize="@dimen/_12sdp" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACCOMPLISHMENTS/ ADDITIONAL DETAILS"
+                    android:textColor="@color/nav_child_title"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="+ Add additional Details"
+                    android:textColor="@color/ightblue"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

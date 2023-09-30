@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.medical.MyPastApplicationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Applications"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/progress_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/recycelrView"/>
+
+
+
+
+<!--    <CheckBox-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/_10sdp"-->
+<!--        android:text="Select All" />-->
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_1sdp"-->
+<!--        android:background="@color/lightgray" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/_5sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                app:cardCornerRadius="@dimen/_10sdp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="@dimen/_8sdp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <CheckBox-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content" />-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/roboto_regular"-->
+<!--                                android:gravity="center"-->
+<!--                                android:text="SANDEEP KUMAR SHARMA"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textFontWeight="400"-->
+<!--                                android:textSize="@dimen/_14sdp" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Kolkata + Open to relocate "-->
+<!--                                android:textColor="@color/txt_chieldform" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/view_profile"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="@dimen/_20sdp"-->
+<!--                            android:fontFamily="@font/roboto_regular"-->
+<!--                            android:gravity="end"-->
+<!--                            android:text="Applied 879 day ago"-->
+<!--                            android:textColor="@color/text_form"-->
+<!--                            android:textFontWeight="400"-->
+<!--                            android:textSize="@dimen/_10sdp" />-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:padding="@dimen/_5sdp"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="EDUCATION "-->
+<!--                                android:fontFamily="@font/roboto_medium"-->
+<!--                                android:textSize="@dimen/_13sdp"-->
+<!--                                android:textColor="@color/black" />-->
+
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                                android:fontFamily="@font/roboto_regular"-->
+<!--                                android:gravity="center"-->
+<!--                                android:text="B.A. (Hons.),History(2016-2019)"-->
+<!--                                android:textColor="@color/txt_chieldform"-->
+<!--                                android:textFontWeight="400"-->
+<!--                                android:padding="@dimen/_5sdp"-->
+<!--                                android:textSize="@dimen/_11sdp" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:textFontWeight="600"-->
+<!--                                android:textSize="@dimen/_10sdp"-->
+<!--                                android:padding="@dimen/_5sdp"-->
+<!--                                android:text="Jadavpur  University    +1 more "-->
+<!--                                android:textColor="@color/txt_chieldform" />-->
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:padding="@dimen/_5sdp"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="SKILLS "-->
+<!--                                android:fontFamily="@font/roboto_medium"-->
+<!--                                android:textSize="@dimen/_13sdp"-->
+<!--                                android:textColor="@color/black" />-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:padding="@dimen/_5sdp"-->
+<!--                                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_star_1"/>-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_star_1"/>-->
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_star_1"/>-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/roboto_regular"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:layout_marginLeft="@dimen/_2sdp"-->
+<!--                                    android:text="English Proficiency (Spoken)"-->
+<!--                                    android:textColor="@color/txt_chieldform"-->
+<!--                                    android:textFontWeight="400"-->
+<!--                                    android:textSize="@dimen/_12sdp" />-->
+
+<!--                            </LinearLayout>-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:padding="@dimen/_5sdp"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_star_1"/>-->
+
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_star_1"/>-->
+<!--                                <ImageView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:src="@drawable/ic_star_1"/>-->
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:fontFamily="@font/roboto_regular"-->
+<!--                                    android:gravity="center"-->
+<!--                                    android:layout_marginLeft="@dimen/_2sdp"-->
+<!--                                    android:text="English Proficiency (Written)"-->
+<!--                                    android:textColor="@color/txt_chieldform"-->
+<!--                                    android:textFontWeight="400"-->
+<!--                                    android:textSize="@dimen/_12sdp" />-->
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:padding="@dimen/_5sdp"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="COVER LETTER  "-->
+<!--                                android:textSize="@dimen/_13sdp"-->
+<!--                                android:fontFamily="@font/roboto_medium"-->
+<!--                                android:textColor="@color/black" />-->
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="horizontal">-->
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                                    android:fontFamily="@font/roboto_regular"-->
+<!--                                    android:text="Apart from an advanced proficiency in both spoken and written English,"-->
+<!--                                    android:textColor="@color/txt_chieldform"-->
+<!--                                    android:padding="@dimen/_5sdp"-->
+<!--                                    android:textFontWeight="400"-->
+<!--                                    android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                            </LinearLayout>-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:padding="@dimen/_5sdp"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="AVAILABILITY "-->
+<!--                                android:fontFamily="@font/roboto_medium"-->
+<!--                                android:textSize="@dimen/_13sdp"-->
+<!--                                android:textColor="@color/black" />-->
+
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                                android:fontFamily="@font/roboto_regular"-->
+<!--                                android:text="I am available full time in kolkata for the next 3  months."-->
+<!--                                android:textColor="@color/txt_chieldform"-->
+<!--                                android:textFontWeight="400"-->
+<!--                                android:padding="@dimen/_5sdp"-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_5sdp"-->
+<!--                            android:padding="@dimen/_5sdp"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="ASSESSMENT "-->
+<!--                                android:textSize="@dimen/_13sdp"-->
+<!--                                android:fontFamily="@font/roboto_medium"-->
+<!--                                android:textColor="@color/black" />-->
+
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                                android:fontFamily="@font/roboto_regular"-->
+<!--                                android:text="Answer 1."-->
+<!--                                android:padding="@dimen/_5sdp"-->
+<!--                                android:textColor="@color/txt_chieldform"-->
+<!--                                android:textFontWeight="400"-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/roboto_regular"-->
+<!--                                android:text="The reason why thr rivalry between .."-->
+<!--                                android:textColor="@color/txt_chieldform"-->
+<!--                                android:padding="@dimen/_5sdp"-->
+<!--                                android:textFontWeight="400"-->
+<!--                                android:textSize="@dimen/_12sdp" />-->
+
+
+<!--                        </LinearLayout>-->
+
+
+
+
+<!--                        &lt;!&ndash;      <TextView-->
+<!--                                  android:layout_width="wrap_content"-->
+<!--                                  android:layout_height="wrap_content"-->
+<!--                                  android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                                  android:drawableLeft="@drawable/ic_baseline_location_on_24"-->
+<!--                                  android:fontFamily="@font/roboto_regular"-->
+<!--                                  android:padding="@dimen/_5sdp"-->
+<!--                                  android:text="    Delhi , jaipur "-->
+<!--                                  android:textColor="@color/light_black"-->
+<!--                                  android:textFontWeight="400"-->
+<!--                                  android:textSize="@dimen/_10sdp" />-->
+
+<!--                              <TextView-->
+<!--                                  android:layout_width="wrap_content"-->
+<!--                                  android:layout_height="wrap_content"-->
+<!--                                  android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                                  android:drawableLeft="@drawable/ic_baseline_money_24"-->
+<!--                                  android:fontFamily="@font/roboto_regular"-->
+<!--                                  android:padding="@dimen/_5sdp"-->
+<!--                                  android:text="    3.36 LPA"-->
+<!--                                  android:textColor="@color/light_black"-->
+<!--                                  android:textFontWeight="400"-->
+<!--                                  android:textSize="@dimen/_10sdp" />-->
+
+<!--                              <LinearLayout-->
+<!--                                  android:layout_width="wrap_content"-->
+<!--                                  android:layout_height="wrap_content"-->
+<!--                                  android:layout_marginLeft="@dimen/_10sdp"-->
+<!--                                  android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                                  android:background="@drawable/custom_bg_butnn"-->
+<!--                                  android:gravity="center"-->
+<!--                                  android:paddingVertical="@dimen/_3sdp">-->
+
+<!--                                  <TextView-->
+<!--                                      android:layout_width="wrap_content"-->
+<!--                                      android:layout_height="wrap_content"-->
+<!--                                      android:layout_alignParentEnd="true"-->
+<!--                                      android:layout_gravity="center"-->
+<!--                                      android:paddingLeft="@dimen/_3sdp"-->
+<!--                                      android:paddingRight="@dimen/_3sdp"-->
+<!--                                      android:layout_margin="@dimen/_2sdp"-->
+<!--                                      android:fontFamily="@font/roboto_regular"-->
+<!--                                      android:gravity="center"-->
+<!--                                      android:text="Fresher Job"-->
+<!--                                      android:textSize="@dimen/_10sdp" />-->
+
+<!--                              </LinearLayout>&ndash;&gt;-->
+
+<!--                        &lt;!&ndash;  <TextView-->
+<!--                              android:layout_width="wrap_content"-->
+<!--                              android:layout_height="wrap_content"-->
+<!--                              android:layout_alignParentEnd="true"-->
+<!--                              android:paddingLeft="@dimen/_3sdp"-->
+<!--                              android:paddingRight="@dimen/_3sdp"-->
+<!--                              android:fontFamily="@font/roboto_regular"-->
+<!--                              android:gravity="center"-->
+<!--                              android:layout_marginLeft="@dimen/_15sdp"-->
+<!--                              android:text="3 Weeks ago"-->
+<!--                              android:textSize="@dimen/_10sdp" />&ndash;&gt;-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                    &lt;!&ndash; <LinearLayout-->
+<!--                         android:layout_width="match_parent"-->
+<!--                         android:layout_height="wrap_content"-->
+<!--                         android:layout_marginTop="@dimen/_12sdp">-->
+
+<!--                         <TextView-->
+<!--                             android:layout_width="wrap_content"-->
+<!--                             android:layout_height="wrap_content"-->
+<!--                             android:layout_alignParentStart="true"-->
+<!--                             android:layout_centerInParent="true"-->
+<!--                             android:layout_marginBottom="@dimen/_5sdpq"-->
+<!--                             android:layout_weight="1"-->
+<!--                             android:background="@drawable/rednboarder"-->
+<!--                             android:drawablePadding="@dimen/_5sdpq"-->
+<!--                             android:fontFamily="@font/roboto_medium"-->
+<!--                             android:gravity="center"-->
+<!--                             android:paddingLeft="@dimen/_10sdp"-->
+<!--                             android:paddingTop="@dimen/_5sdp"-->
+<!--                             android:paddingRight="@dimen/_13sdp"-->
+<!--                             android:paddingBottom="@dimen/_4sdp"-->
+<!--                             android:text="Not Intreste"-->
+<!--                             android:textColor="@color/red"-->
+<!--                             android:textSize="@dimen/_13sdp" />-->
+
+<!--                         <TextView-->
+<!--                             android:layout_width="wrap_content"-->
+<!--                             android:layout_height="wrap_content"-->
+<!--                             android:layout_centerInParent="true"-->
+<!--                             android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                             android:layout_marginBottom="@dimen/_5sdpq"-->
+<!--                             android:layout_weight="1"-->
+<!--                             android:background="@drawable/greenboarder"-->
+<!--                             android:drawablePadding="@dimen/_5sdpq"-->
+<!--                             android:fontFamily="@font/roboto_medium"-->
+<!--                             android:gravity="center"-->
+<!--                             android:paddingLeft="@dimen/_10sdp"-->
+<!--                             android:paddingTop="@dimen/_5sdp"-->
+<!--                             android:paddingRight="@dimen/_13sdp"-->
+<!--                             android:paddingBottom="@dimen/_4sdp"-->
+<!--                             android:text="Short Liste"-->
+<!--                             android:textColor="#36B558"-->
+<!--                             android:textSize="@dimen/_13sdp" />-->
+
+
+<!--                         <TextView-->
+<!--                             android:layout_width="wrap_content"-->
+<!--                             android:layout_height="wrap_content"-->
+<!--                             android:layout_alignParentEnd="true"-->
+<!--                             android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                             android:layout_marginBottom="@dimen/_5sdpq"-->
+<!--                             android:layout_weight="1"-->
+<!--                             android:background="@drawable/blueboarder"-->
+<!--                             android:drawablePadding="@dimen/_5sdpq"-->
+<!--                             android:fontFamily="@font/roboto_medium"-->
+<!--                             android:gravity="center"-->
+<!--                             android:paddingLeft="@dimen/_10sdp"-->
+<!--                             android:paddingTop="@dimen/_5sdp"-->
+<!--                             android:paddingRight="@dimen/_13sdp"-->
+<!--                             android:paddingBottom="@dimen/_4sdp"-->
+<!--                             android:text="Hire"-->
+<!--                             android:textColor="@color/ightblue"-->
+<!--                             android:textSize="@dimen/_13sdp" />-->
+
+<!--                     </LinearLayout>&ndash;&gt;-->
+
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+</LinearLayout>

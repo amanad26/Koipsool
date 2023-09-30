@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.chemist.ChemistProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:id="@+id/ic_back"
+            android:contentDescription="@string/ic_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_medium"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/change_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/_15sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_50sdp"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="0.5dp"
+            android:id="@+id/userImage"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/user_profile"
+            android:layout_marginLeft="@dimen/_12sdp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="User Name"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+        <TextView
+            android:id="@+id/user_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="State"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+
+        <TextView
+            android:id="@+id/user_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="City"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/user_address"
+            android:inputType="textPostalAddress|textCapWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Address"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_profile"
+        android:visibility="gone"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:backgroundTint="@color/ightblue">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Update"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

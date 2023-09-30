@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <com.skydoves.elasticviews.ElasticCardView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cardView_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_1sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/job_title"
+                android:text="Medical representatives Jobs &amp; Internships"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@color/white"
+                android:textFontWeight="600"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:textFontWeight="400"
+                android:textColor="@color/light_black"
+                android:text="Medical Representatives Internship"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:id="@+id/job_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/dots"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_5sdp"
+                android:text=" Location: Patna, Jaipur"
+                android:textColor="@color/light_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/job_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dots"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_5sdp"
+                android:text="Salary: Rs 4.5 lpa to 6 lpa"
+                android:textColor="@color/light_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/job_experiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dots"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_5sdp"
+                android:text=" Exp: 3-5 years "
+                android:textColor="@color/light_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdp" />
+            <TextView
+                android:id="@+id/job_posted_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dots"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_5sdp"
+                android:text=" Posted: 10th Jan 2023 "
+                android:textColor="@color/light_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/job_total_applicants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/dots"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_5sdp"
+                android:text="  No of applicants: 25"
+                android:textColor="@color/light_black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_bg_butnn"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/_3sdp">
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/know_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+                    android:gravity="center"
+                    android:text="Know More"
+                    android:textColor="@color/ightblue"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.skydoves.elasticviews.ElasticCardView>
+
+</LinearLayout>

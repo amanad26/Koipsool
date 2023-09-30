@@ -1,0 +1,2640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.pharma.PostMrInternshipJobActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Post MR Internship Or Job"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Opportunity type"
+                android:textColor="@color/text_form"
+                android:textSize="@dimen/_16sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/boardergraybackground"
+                android:padding="@dimen/_5sdp">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/radioInternship"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Internship"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioJob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_60sdp"
+                        android:text=" Job"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_internship"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Internship details"
+                    android:textColor="@color/text_form"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackgrounds"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Internship details"
+                            android:textColor="@color/txt_chieldform"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <EditText
+                            android:id="@+id/intern_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="e.g. Android app development"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Skills required"
+                        android:textColor="@color/txt_chieldform"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/intern_skills_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="e.g. Android app development"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/edttxt_color"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <LinearLayout
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/selected_skills_recycler_intern"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Internship type"
+                            android:textColor="@color/txt_chieldform"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp">
+
+                            <RadioGroup
+                                android:id="@+id/intern_type_radio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="vertical"
+                                android:paddingRight="@dimen/_10sdp">
+
+                                <RadioButton
+                                    android:id="@+id/intern_type_office"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="In office"
+                                    android:checked="true"
+                                    android:textColor="@color/lightsblack"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/intern_type_remote"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Remote"
+                                    android:textColor="@color/lightsblack"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </RadioGroup>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="City/Cities"
+                        android:textColor="@color/txt_chieldform"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <EditText
+                        android:id="@+id/intern_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="e.g. Mumbai"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Is part-time allowed? "
+                            android:textColor="@color/txt_chieldform"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <Switch
+                            android:id="@+id/intern_part_time_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Number of Openings"
+                        android:textColor="@color/txt_chieldform"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <EditText
+                        android:id="@+id/intern_numberOf_opening"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="e.g. 4"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Website"
+                        android:textColor="@color/txt_chieldform"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <EditText
+                        android:id="@+id/intern_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="https://kapsool.com"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Internship start date"
+                            android:textColor="@color/txt_chieldform"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/intern_stat_date_radio_g">
+
+                                <RadioButton
+                                    android:id="@+id/intern_start_immediately"
+                                    android:layout_width="wrap_content"
+                                    android:text="Immediately(within next 30 days)"
+                                    android:layout_height="wrap_content" />
+
+                                <RadioButton
+                                    android:id="@+id/intern_start_later"
+                                    android:layout_width="wrap_content"
+                                    android:text=" Later"
+                                    android:layout_height="wrap_content" />
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Internship Duration"
+                        android:textColor="@color/lightsblack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Shorter the duration, more the applications"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Spinner
+                            android:id="@+id/months_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:outlineSpotShadowColor="@color/black" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Intern's responsbilities"
+                        android:textColor="@color/lightsblack"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:letterSpacing="0.1"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="Internship posts with detailed job discription recieve signoficiantly more application"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10sdp">
+
+                        <EditText
+                            android:background="@color/white"
+                            android:id="@+id/intern_resposibility_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:letterSpacing="0.1"
+                            android:inputType="textMultiLine"
+                            android:lineSpacingExtra="1dp"
+                            android:hint="day to day responsbilities"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10sdp">
+
+                        <CheckBox
+                            android:id="@+id/intern_allow_women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:lineSpacingExtra="1dp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text=" Allow applications from women also who \n are willing to start/restart their career."
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_35sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Know More"
+                            android:textColor="@color/ightblue"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Stipend and perks"
+                    android:textColor="@color/text_form"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackgrounds"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Stipend:"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_fixed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Fixed"
+                                    android:checked="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_negotiable"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nagotiable"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_perfomance_based"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="performance based"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_unpaid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Unpaid"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_fixed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="Rs."
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/intern_price_start_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:hint="e.r.1000"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:hint="/Months"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linaer_negotiable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="The stipend must be negotiated and finalizes before the internship starts"
+                            android:textColor="@color/txt_color"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="Rs."
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/intern_negotiable_start_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:hint="e.r.1000"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:hint="/Months"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="To"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="Rs."
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/intern_negotiable_end_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:hint="e.r.1000"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:hint="/Months"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linaer_performance_based"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="For output-driven perfomance-based internships such as Business Development (Sales) ect. we insist on a minimum assured stipend (Rs. 1000 for work from home internship and Rs.2000 for -n-office internship) and the rest could be incentive-based"
+                            android:textColor="@color/txt_color"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="Minimum Assure"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="Rs."
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/intern_perfomance_min_assure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:hint="e.r.1000"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:hint="/Months"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="Incentive Assure"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="To"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="Rs."
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/intern_perfomance_max_assure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:hint="e.r.1000"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:hint="/Months"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:background="@color/white"
+                                    android:hint="Per"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/boardergraybackground"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@color/white"
+                                    android:hint="Choose Scale"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:textColor="@color/edttxt_color"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <Spinner
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_unpaid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="We allowed unpaid internship only in case of NGOs or niche profiles"
+                            android:textColor="@color/txt_color"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Perks(optional)"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/intern_fixed_certificate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="Certificate"
+                                android:textColor="@color/lightsblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <CheckBox
+                                android:id="@+id/intern_fixed_letter_of_recomndeation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="Letter of Recommendation"
+                                android:textColor="@color/lightsblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <CheckBox
+                                android:id="@+id/intern_fixed_work_hours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="Flexible work hours"
+                                android:textColor="@color/lightsblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <CheckBox
+                                android:id="@+id/intern_fixed_5dayWork"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="5 days a week"
+                                android:textColor="@color/lightsblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <CheckBox
+                                android:id="@+id/intern_fixed_informal_dresscode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="Informal dress code"
+                                android:textColor="@color/lightsblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <CheckBox
+                                android:id="@+id/intern_fixed_free_snacks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text=" Free snacks &amp; beveregas"
+                                android:textColor="@color/lightsblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <!--    <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/_10sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:fontFamily="@font/roboto_medium"
+                                        android:text="Does this intership come with "
+                                        android:textColor="@color/txt_chieldform"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <Switch
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center" />
+
+
+                                </LinearLayout>-->
+
+
+                        </LinearLayout>
+
+                        <Switch
+                            android:id="@+id/intern_fixed_pop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="Does this internship come with pre-placement offer (POP) (Optional)"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:padding="@dimen/_7sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/internship_popmonths"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:hint="POP in Months"
+                            android:background="@drawable/boardergraybackground">
+                        </EditText>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Cover letter,availability &amp; assessment question"
+                    android:textColor="@color/text_form"
+                    android:textSize="@dimen/_16sdp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackgrounds"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Cover letter and availability questions will be asked to every applicant by default .if you wish ,you may ask two more customized quetions as an assessment"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Cover Letter"
+                        android:textColor="@color/text_form"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Why should you be hired for this role ?"
+                        android:textColor="#585858"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Availability"
+                        android:textColor="@color/text_form"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Are you available for 1 month, starting immediately, for a full-time work from home internship? If not, what is the time period you are available for and the earliest date you can start this internship on?"
+                        android:textColor="#585858"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/questions_internship_linear"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/internship_questtion_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Why should you be hired for this role ?"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:inputType="textMultiLine"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/internship_questtion_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Are you available for 1 month, starting immediately, for a full-time work from home internship? If not, what is the time period you are available for and the earliest date you can start this internship on?"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:inputType="textMultiLine"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:id="@+id/internship_questtion_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Enter Your Question "
+                            android:inputType="textMultiLine"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/internship_questtion_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Enter Your Question "
+                            android:inputType="textMultiLine"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/internship_questtion_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Enter Your Question "
+                            android:inputType="textMultiLine"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/add_question_internship"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/plushh"
+                        android:drawableTint="@color/ightblue"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="+ Add assessment question "
+                        android:textColor="@color/ightblue"
+                        android:textSize="@dimen/_13sdp" />
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="About"
+                    android:textColor="@color/txt_chieldform"
+                    android:textSize="@dimen/_13sdp" />
+
+                <EditText
+                    android:id="@+id/intern_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackground"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="about the internship"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:inputType="textMultiLine"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdpq"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <!-- <TextView
+                         android:id="@+id/edit_role"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/_40sdp"
+                         android:layout_marginLeft="@dimen/_10sdp"
+                         android:layout_marginRight="@dimen/_10sdp"
+                         android:layout_marginBottom="@dimen/_8sdpq"
+                         android:layout_weight="1"
+                         android:background="@drawable/whiteboarder"
+                         android:drawablePadding="@dimen/_5sdpq"
+                         android:fontFamily="@font/roboto_medium"
+                         android:gravity="center"
+                         android:paddingLeft="@dimen/_10sdp"
+                         android:paddingTop="@dimen/_5sdp"
+                         android:paddingRight="@dimen/_13sdp"
+                         android:paddingBottom="@dimen/_4sdp"
+                         android:text="Save Draft"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/_13sdp" />-->
+
+                    <TextView
+                        android:id="@+id/post_internship"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdpq"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluebackground"
+                        android:drawablePadding="@dimen/_5sdpq"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_13sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="Post Intership"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_job"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Job Details"
+                    android:textColor="@color/text_form"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackgrounds"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Job Title"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <EditText
+                            android:id="@+id/post_job_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="e.g. Android app development"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Minimum Experience"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/post_job_min_experience"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_margin="@dimen/_10sdp"-->
+<!--                            android:background="@drawable/boardergraybackground"-->
+<!--                            android:fontFamily="@font/roboto_medium"-->
+<!--                            android:hint="2 years"-->
+<!--                            android:paddingHorizontal="@dimen/_8sdp"-->
+<!--                            android:paddingVertical="@dimen/_10sdp"-->
+<!--                            android:paddingBottom="@dimen/_8sdp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="@dimen/_13sdp" />-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <Spinner
+                                android:id="@+id/job_experiance_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerInParent="true"
+                                android:outlineSpotShadowColor="@color/black" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Skills required "
+                        android:textColor="@color/black_brown"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <TextView
+                        android:id="@+id/job_skills_req"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="e.g. Android app development"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/edttxt_color"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <LinearLayout
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/selected_skills_recycler"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Job type"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp">
+
+                            <RadioGroup
+                                android:id="@+id/job_type_radio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="vertical"
+                                android:paddingRight="@dimen/_10sdp">
+
+                                <RadioButton
+                                    android:id="@+id/radioInoffice_l2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="In office"
+                                    android:textColor="@color/lightsblack"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioRemote_l2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" Remote"
+                                    android:textColor="@color/lightsblack"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </RadioGroup>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Number of Openings"
+                        android:textColor="@color/black_brown"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <EditText
+                        android:id="@+id/post_job_number_of_opening"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="e.g. Android app development"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:inputType="number"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Job description"
+                        android:textColor="@color/black_brown"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/boardergraybackground"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10sdp">
+
+                        <EditText
+
+                            android:layout_margin="@dimen/_3sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:hint="Job responsibilities"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:textColor="@color/black"
+                            android:id="@+id/post_job_resposibility"/>
+
+
+                    </LinearLayout>
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:paddingBottom="@dimen/_10sdp"
+                         android:orientation="vertical">
+
+                         <CheckBox
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text=" Allow applications from women also who \n are willing to start/restart their career."
+                             android:textSize="@dimen/_13sdp"
+                             android:lineSpacingExtra="1dp"
+                             android:fontFamily="@font/roboto_regular"
+                             android:textColor="@color/lightsblack"
+                             android:paddingBottom="@dimen/_5sdp"
+                             android:layout_marginLeft="@dimen/_10sdp"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Know More"
+                             android:textSize="@dimen/_13sdp"
+                             android:fontFamily="@font/roboto_regular"
+                             android:textColor="@color/ightblue"
+                             android:layout_marginBottom="@dimen/_10sdp"
+                             android:layout_marginLeft="@dimen/_35sdp"/>
+
+
+                     </LinearLayout>-->
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Salary and perks"
+                    android:textColor="@color/text_form"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackgrounds"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_10sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="CTC (optional):"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp"
+                            android:weightSum="2">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground">
+
+                                <EditText
+                                    android:id="@+id/post_job_salery_start"
+                                    android:layout_margin="@dimen/_2sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:hint="e.g.5.2"
+                                    android:background="@color/white"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="to"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginLeft="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/boardergraybackground">
+
+                                <EditText
+                                    android:id="@+id/post_job_salery_end"
+                                    android:layout_margin="@dimen/_2sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerInParent="true"
+                                    android:hint="e.g.5.2"
+                                    android:background="@color/white"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="LPA"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="CTC breakup"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="1dp"
+                            android:text="Transparent CTC breakup attracts top condidates"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:padding="@dimen/_5sdp">
+
+                            <RadioGroup
+                                android:id="@+id/job_radio_gounp_ctc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/_10sdp">
+
+                                <RadioButton
+                                    android:id="@+id/job_radio_percent_ctc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="In %"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <RadioButton
+                                    android:id="@+id/job_radio_lpa_ctc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" In LPA"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </RadioGroup>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Fixed pay"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="1dp"
+                            android:text="Fixed pay is the fixed component of the CTC"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:id="@+id/job_fixed_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="e.g. 5.2"
+                            android:inputType="numberDecimal"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Variable pay (optional)"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="1dp"
+                            android:text="Variable pay includes performance based case incentivies and bonous"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:id="@+id/job_variable_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="e.g. 5.2"
+                            android:inputType="numberDecimal"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Other Incentives (optional)"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="1dp"
+                            android:text="Variable pay includes performance based case incentivies and bonous"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:id="@+id/job_other_insentive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="e.g. 5.2"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Website"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <EditText
+                            android:id="@+id/job_website"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="https://abc.com"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/job_pop_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="This job has a probation period"
+                        android:textColor="@color/black_brown"
+                        android:textSize="@dimen/_13sdp" />
+
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/pop_linar_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:letterSpacing="0.1"
+                            android:lineSpacingExtra="1dp"
+                            android:text="POP in Months"
+                            android:textColor="@color/lightsblack"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:id="@+id/job_pop_months"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="3 Months"
+                            android:inputType="numberDecimal"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Perks(optional)"
+                            android:textColor="@color/black_brown"
+                            android:textSize="@dimen/_13sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/job_5day_check"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5 days a week"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/job_health_chackbox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Health insurance"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/job_lifeinsurance_check"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Life incurance"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Cover letter,availability &amp; assessment question"
+                    android:textColor="@color/text_form"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackgrounds"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:letterSpacing="0.1"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="Cover letter and availability questions will be asked to every applicant by default .if you wish ,you may ask two more customized quetions as an assessment"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Cover Letter"
+                        android:textColor="@color/text_form"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Why should you be hired for this role ?"
+                        android:textColor="#585858"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Availability"
+                        android:textColor="@color/text_form"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Are you available for 1 month, starting immediately, for a full-time work from home internship? If not, what is the time period you are available for and the earliest date you can start this internship on? "
+                        android:textColor="#585858"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/questions_job_linear"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/job_questtion_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Why should you be hired for this role ?"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:inputType="textMultiLine"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/job_questtion_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Are you available for 1 month, starting immediately, for a full-time work from home internship? If not, what is the time period you are available for and the earliest date you can start this internship on?"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:inputType="textMultiLine"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <EditText
+                            android:id="@+id/job_questtion_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Enter Your Question "
+                            android:inputType="textMultiLine"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/job_questtion_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Enter Your Question "
+                            android:inputType="textMultiLine"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+
+
+                        <EditText
+                            android:id="@+id/job_questtion_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/boardergraybackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:hint="Enter Your Question "
+                            android:inputType="textMultiLine"
+                            android:paddingHorizontal="@dimen/_8sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/add_job_questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="+ Add Assessment quetions"
+                        android:textColor="@color/ightblue"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="About Job"
+                    android:textColor="@color/black_brown"
+                    android:textSize="@dimen/_13sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackground"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <EditText
+                        android:layout_margin="@dimen/_3sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:background="@color/white"
+                        android:hint="Describe About Job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/post_job_about"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7sdpq"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <!--     <TextView
+                             android:id="@+id/edit_role1"
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/_40sdp"
+                             android:layout_marginLeft="@dimen/_10sdp"
+                             android:layout_marginRight="@dimen/_10sdp"
+                             android:layout_marginBottom="@dimen/_8sdpq"
+                             android:layout_weight="1"
+                             android:background="@drawable/whiteboarder"
+                             android:drawablePadding="@dimen/_5sdpq"
+                             android:fontFamily="@font/roboto_medium"
+                             android:gravity="center"
+                             android:paddingLeft="@dimen/_10sdp"
+                             android:paddingTop="@dimen/_5sdp"
+                             android:paddingRight="@dimen/_13sdp"
+                             android:paddingBottom="@dimen/_4sdp"
+                             android:text="Save Draft"
+                             android:textColor="@color/black"
+                             android:textSize="@dimen/_13sdp" />-->
+
+                    <TextView
+                        android:id="@+id/post_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdpq"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluebackground"
+                        android:drawablePadding="@dimen/_5sdpq"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_13sdp"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="Post Job"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

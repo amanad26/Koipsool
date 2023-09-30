@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "91148947867",
+    "firebase_url": "https://signinwith-ee491-default-rtdb.firebaseio.com",
+    "project_id": "signinwith-ee491",
+    "storage_bucket": "signinwith-ee491.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91148947867:android:6000c2c799517c7524d13e",
+        "android_client_info": {
+          "package_name": "com.koipsool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91148947867-84l13jvj20ohe16gntft297qvkpt8eob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZPCt5KXUQhfCsKeoDInFjz1HyG4bY5oQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91148947867-84l13jvj20ohe16gntft297qvkpt8eob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91148947867:android:98428701828d736f24d13e",
+        "android_client_info": {
+          "package_name": "com.koipsool_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91148947867-84l13jvj20ohe16gntft297qvkpt8eob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZPCt5KXUQhfCsKeoDInFjz1HyG4bY5oQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91148947867-84l13jvj20ohe16gntft297qvkpt8eob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

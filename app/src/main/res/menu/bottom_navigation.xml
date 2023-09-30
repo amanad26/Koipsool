@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/home_24"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/bottom_nav_buy"
+        android:icon="@drawable/ic_auction"
+        android:title="@string/live_auction" />
+    <item
+        android:id="@+id/bottom_nav_shortlist"
+        android:icon="@drawable/favo"
+        android:title="@string/favourite" />
+    <!--    <item android:title="@string/sellcar"-->
+    <!--        android:id="@+id/bottom_nav_sell"-->
+    <!--        android:icon="@drawable/car_"-->
+    <!--        />-->
+    <item
+        android:id="@+id/bottom_nav_account"
+        android:icon="@drawable/account_"
+        android:title="@string/Account" />
+
+</menu>

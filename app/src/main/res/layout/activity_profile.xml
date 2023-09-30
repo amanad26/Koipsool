@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.pharma.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:id="@+id/ic_back"
+            android:contentDescription="@string/ic_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/title_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_img"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="@dimen/_12sdp"/>
+
+
+            <TextView
+                android:id="@+id/change_phpto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_tab_unselected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabIndicatorColor="@color/ightblue"
+        app:tabSelectedTextColor="@color/ightblue"
+       app:tabTextColor="@color/black" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/CreatTeam_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_below="@id/tab_lay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_lay"/>
+<!--
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:background="@drawable/custom_bg_btnn">
+    <TextView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:text="Basic Details"
+        android:textSize="@dimen/_12sdp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/ightblue"
+        android:gravity="center"
+
+       />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/custom_bg_btnn">
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Basic Details"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/EditTextOutLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/ightblue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ightblue"
+            app:hintTextColor="@color/black">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Company name"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/ightblue"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/EditTextOutLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/ightblue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ightblue"
+            app:hintTextColor="@color/black">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="State"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/ightblue"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/EditTextOutLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/ightblue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ightblue"
+            app:hintTextColor="@color/black">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="City"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/ightblue"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/EditTextOutLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/ightblue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ightblue"
+            app:hintTextColor="@color/black">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/ightblue"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/EditTextOutLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/ightblue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ightblue"
+            app:hintTextColor="@color/black">
+
+            <EditText
+                android:id="@+id/Nme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Phone"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/ightblue"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/EditTextOutLineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/ightblue"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/ightblue"
+            app:hintTextColor="@color/black">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Admin Name"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/ightblue"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+       android:layout_margin="@dimen/_20sdp"
+        android:gravity="center"
+        android:background="@drawable/custom_bg_btnen">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+-->
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.medical.BrowseInternshipViewAllActivity">
+
+    <RelativeLayout
+        android:id="@+id/AG_headers"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_backnew" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ic_back"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <!--   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/greenboarder">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/_3sdp"
+                           android:drawableLeft="@drawable/ic_gray_check"
+                           android:fontFamily="@font/roboto_regular"
+                           android:text="   Actively hiring"
+                           android:textSize="@dimen/_12sdp"
+                           android:textColor="@color/lightgreen" />
+
+                   </LinearLayout>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Talent Acquisition"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="QuickSell"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_13sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:text=" Sekhani Brothers(Delhi) "
+                    android:textColor="@color/gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:text="    Delhi "
+                    android:textColor="@color/black_semi_transparent"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_baseline_money_24"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="    Starts Immediately"
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_baseline_money_24"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="    3 Months"
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_baseline_money_24"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="    3.36 LPA"
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_baseline_money_24"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="    Apply By 8 jan'23"
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/custom_bg_btnn"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="Internship"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:background="@drawable/custom_bg_btnn"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:drawableLeft="@drawable/ic_baseline_watch_later_24"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:text="  posted 3 weeks ago"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="  463 applicants"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_share"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/view_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_3sdp"
+                    android:text="About Quicksell"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Website"
+                    android:textColor="@color/ightblue"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/_12sdp" />
+
+                <!--  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/_8sdp"
+                      android:text="QuickSell Auto was founded in 2017 by Michael Morris and Rory Swindell. Originally started as a wholesale dealer which sells directly to other dealerships, they received requests from friends and family to buy direct. Therefore, in 2018 QuickSell Auto was converted into a retail dealership which allowed them to sell directly to the consumer. QuickSell Auto moved its used car dealership from Longwood to Apopka in 2021"
+                      android:textColor="@color/gray"
+                      android:textFontWeight="500"
+                      android:letterSpacing=".05"
+                      android:lineHeight="24dp"
+                      android:textSize="@dimen/_12sdp" />-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:letterSpacing=".05"
+                    android:lineHeight="24dp"
+                    android:text="We also give thanks to our Lord and Savior Jesus Christ, for unmerited favor, which we are shown every single day. Without His guidance QuickSell Auto would not be what and where we are today."
+                    android:textColor="@color/gray"
+                    android:textFontWeight="500"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/greenboarder"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_5sdp"
+                    android:text="   Activity on Internshala "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:drawableLeft="@drawable/ic_baseline_watch_later_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="   Hiring since December 2022 "
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:drawableLeft="@drawable/ic_baseline_watch_later_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="   4 opportunities posted "
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="About The Internship "
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Selecter interns day-to-day  responsibilities include:"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/dots"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:text=" Sourcing via different portals "
+                    android:textColor="@color/gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dots"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Working on bilk hiring "
+                    android:textColor="@color/gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dots"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Bulk Calling : Conducting telephonic interviews "
+                    android:textColor="@color/gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dots"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Working on telecalling "
+                    android:textColor="@color/gray"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Learn skills relevants for this internship on internshala tranings"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Learn Human Resources Management"
+                    android:textColor="@color/ightblue"
+                    android:textFontWeight="400" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Specialize in Human Resource Management"
+                    android:textColor="@color/ightblue"
+                    android:textFontWeight="400" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Who can apply"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="Selecter interns day-to-day  responsibilities include:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/dots"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text=" Sourcing via different portals "
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/dots"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Working on bilk hiring "
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/dots"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Bulk Calling : Conducting telephonic interviews "
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/dots"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Working on telecalling "
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Perks"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="Certificate"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Number of openings"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="3000"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Additional Information"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/dots"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text=" Top-performers picture will be share un the monthly magazine - window to the future "
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:drawableLeft="@drawable/dots"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:text=" Gift hampers from Hamari pahchan NGO for exceptional performance "
+                        android:textColor="@color/gray"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:backgroundTint="@color/ightblue"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_25sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Apply Now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

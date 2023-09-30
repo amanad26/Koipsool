@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_mystok"
+            android:icon="@drawable/ic_refaresh"
+            android:title="@string/menu_mysubscription" />
+        <item
+            android:id="@+id/nav_action"
+            android:icon="@drawable/ic_categorys"
+            android:title="@string/menu_shopbycat" />
+
+
+        <item
+            android:id="@+id/nav_insurance"
+            android:icon="@drawable/ic_calenders"
+            android:title="@string/menu_insurance" />
+
+        <item
+            android:id="@+id/nav_actionreports"
+            android:icon="@drawable/ic_wallet"
+            android:title="@string/menu_actionreports" />
+
+
+
+        <item
+            android:id="@+id/nav_fmechanic"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/menu_mechanic" />
+
+        <item
+            android:id="@+id/nav_Towingservice"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/menu_tow" />
+
+        <!--
+
+        <item
+            android:id="@+id/nav_referandearn"
+            android:icon="@drawable/ic_share"
+            android:title="@string/menu_referandearn" />
+
+
+
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/ic_offers"
+            android:title="@string/menu_offers" />
+-->
+
+
+    </group>
+</menu>

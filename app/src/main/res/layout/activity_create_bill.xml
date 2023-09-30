@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.pharma.CreateBillActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Create Bill"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </RelativeLayout>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/blueboarder">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@color/white"
+            android:hint="Search Client"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/boardergraybackground"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_8sdp">
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/client_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:hint="Client List*"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/boardergraybackground"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Name of the party"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/boardergraybackground"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Address of the party"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/boardergraybackground"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <Spinner
+                    android:id="@+id/company_state_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:outlineSpotShadowColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/boardergraybackground"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/_3sdp">
+
+                <Spinner
+                    android:id="@+id/company_city_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:outlineSpotShadowColor="@color/black" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/boardergraybackground"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Buyers Contact no."
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/drug_licance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/boardergraybackground"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Drug License (optional)"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/hsn_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/boardergraybackground"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="HSN (optional)"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+            <!--   <RelativeLayout
+                   android:id="@+id/rl_free_item"
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/_40sdp"
+                   android:background="@drawable/boardergraybackground"
+                   android:padding="@dimen/_2sdp"
+                   android:layout_margin="@dimen/_8sdp"
+                   android:paddingHorizontal="@dimen/_8sdp"
+                   android:paddingVertical="@dimen/_10sdp"
+                   android:paddingBottom="@dimen/_8sdp">
+
+                   <com.jaredrummler.materialspinner.MaterialSpinner
+                       android:id="@+id/free_item_spinner"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerInParent="true"
+                       android:hint="Free item*"
+                       android:paddingLeft="@dimen/_15sdp"
+                       android:textSize="@dimen/_13sdp" />
+
+
+               </RelativeLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/boardergraybackground"
+                    android:padding="@dimen/_2sdp"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_8sdp">
+
+                    <!-- <EditText
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentStart="true"
+                         android:layout_centerInParent="true"
+                         android:hint="Selling In"
+                         android:paddingLeft="@dimen/_15sdp"
+                         android:textSize="@dimen/_13sdp" />-->
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/selling_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textSize="@dimen/_13sdp"
+                        app:ms_hint="Selling In" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/igst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/boardergraybackground"
+                    android:fontFamily="@font/roboto_medium"
+                    android:hint="IGST*"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone" />
+
+
+                <!--  <LinearLayout
+                      android:id="@+id/Selling_Option"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/_8sdp"
+                      android:orientation="horizontal"
+                      android:visibility="gone"
+                      android:weightSum="2">
+
+
+                      <RelativeLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginRight="@dimen/_3sdp"
+                          android:layout_weight="1"
+                          android:background="@drawable/boardergraybackground">
+
+                          <TextView
+                              android:id="@+id/cgst_spinner"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentStart="true"
+                              android:layout_centerInParent="true"
+                              android:paddingLeft="@dimen/_15sdp"
+                              android:text="CGST*"
+                              android:textSize="@dimen/_13sdp" />
+
+
+                      </RelativeLayout>
+
+                      <RelativeLayout
+                          android:id="@+id/sgst_no"
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/_40sdp"
+                          android:layout_marginLeft="@dimen/_3sdp"
+                          android:layout_weight="1"
+                          android:background="@drawable/boardergraybackground"
+                          android:visibility="visible">
+
+                          <TextView
+                              android:id="@+id/sgst_spinner"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentStart="true"
+                              android:layout_centerInParent="true"
+                              android:paddingLeft="@dimen/_15sdp"
+                              android:text="SGST*"
+                              android:textSize="@dimen/_13sdp" />
+
+                      </RelativeLayout>
+
+                  </LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/boardergraybackground"
+                    android:padding="@dimen/_2sdp">
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/gst_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:hint="GST*"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gst_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boardergraybackground"
+                    android:padding="@dimen/_2sdp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/gst_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:hint="GST*"
+                        android:padding="@dimen/_10sdp"
+                        android:inputType="number"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/AG_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/ightblue"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_20sdp"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/_25sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

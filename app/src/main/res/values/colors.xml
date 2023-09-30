@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#08b6ff</color>
+    <color name="nav_parent_title">#310850</color>
+    <color name="nav_child_title">#575757</color>
+    <color name="colorPrimary1">#0695e1</color>
+    <color name="colorPrimaryDark">#04914c</color>
+    <color name="colorAccent">#04914c</color>
+    <color name="green">#37b27b</color>
+    <color name="darkgreen">#3ab19b</color>
+    <color name="blue600">#4B7AFA</color>
+    <color name="textcolor">#000000</color>
+    <color name="light_text_color">#627285</color>
+    <color name="text_header_color">#0D3662</color>
+    <color name="textheadercolorfiv">#8D0D3662</color>
+    <color name="sky">#009ee7</color>
+    <color name="selectedcolor">#f5f5f5</color>
+    <color name="red">#f74b81</color>
+    <color name="dred">#B20808</color>
+    <color name="yellow">#e9d028</color>
+    <color name="blue">#3a72f3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#5b5b5b</color>
+    <color name="lightprimery">#e8f6ef</color>
+    <color name="lightgray">#ECECEC</color>
+    <color name="orange">#80FBBA00</color>
+    <color name="lightgreen">#36B558</color>
+    <color name="transreen">#1108AC11</color>
+    <color name="lightblue">#AFC3FB</color>
+    <color name="auth_profgle_divider_grey">#ff636363</color>
+    <color name="grey">#adadad</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_4001">#F5FBFD</color>
+    <color name="grey_600">#F3F0F0</color>
+    <color name="grey_">#F3F1F1</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="pink_600">#FFF6D4</color>
+    <color name="pink12">#F6F6F6</color>
+    <color name="light_white">#F1F0F0</color>
+    <color name="pink_500">#fbd96d</color>
+    <color name="pink_400">#F4F4F4</color>
+    <color name="lightred">#F8F8F8</color>
+    <color name="lightsky">#FBFEFF</color>
+    <color name="whitetransparent">#4AFFFFFF</color>
+    <color name="whitetransparent2">#90FFFFFF</color>
+    <color name="blacktransparent">#48000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="profilelock">#E83C3C3C</color>
+    <color name="black_semi_transparent">#1A1919</color>
+    <color name="background">#74E5E5E5</color>
+    <color name="background1">#f3f2f8</color>
+    <color name="backgroundnew">#F3F1F1</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="ightblue">#08b6ff </color>
+    <color name="verifyedcolor">#28a1a4</color>
+    <color name="slider_indicator_selected">#fd8700</color>
+    <color name="slider_indicator_unselected">#535252</color>
+    <color name="itembackgrounds">#f2f5fc</color>
+    <color name="custom_red">#DD2C00</color>
+    <color name="light_black">#F34E4D4D</color>
+    <color name="trans">#00000000</color>
+    <color name="darkorange">#fe9901</color>
+    <color name="reddish_black">#833F3A</color>
+    <color name="bg_grey">#FBFBFB</color>
+    <color name="red_">#F44336</color>
+    <color name="off_white">#FCF4DE</color>
+    <color name="purple">#AE11C9</color>
+    <color name="view_grey">#E7E7E7</color>
+    <color name="view_divider">#E0DEDE</color>
+    <color name="nav_parent">#F5F5F5</color>
+    <color name="grey_1">#CBCBCB</color>
+
+    <color name="text_form">#313131</color>
+    <color name="txt_chieldform">#363636</color>
+    <color name="txt_color">#919191</color>
+    <color name="edttxt_color">#9a9a9a</color>
+    <color name="lightsblack">#4B4B4B </color>
+
+
+    <color name="primarycolor">#08b6ff </color>
+
+
+    <color name="primarycolortrans">#0A08B6FF</color>
+
+
+    <color name="brown">#F8F5F5</color>
+    <color name="black_brown">#0c0a0a</color>
+    <color name="drawabletxt_color">#333333</color>
+    <color name="black_light">#484848</color>
+    <color name="cp_text">#0096DA</color>
+    <color name="black_light_2">#A9000000</color>
+
+
+    <string-array name="red_wine">
+        <item>#ff670729</item>
+        <item>#ff7a0c2d</item>
+        <item>#ff96092d</item>
+        <item>#ffa10a37</item>
+        <item>#ffbf013b</item>
+    </string-array>
+
+    <string-array name="polluted_waves">
+        <item>#394948</item>
+        <item>#5a7874</item>
+        <item>#499092</item>
+        <item>#43abae</item>
+        <item>#6ecfd2</item>
+    </string-array>
+
+    <string-array name="medical_express">
+        <item>#a3a3a3</item>
+        <item>#bbbbbb</item>
+        <item>#cccccc</item>
+        <item>#dddddd</item>
+        <item>#eeeeee</item>
+
+
+
+    </string-array>
+
+    <string-array name="vertical_ntb">
+        <item>#df5a55</item>
+        <item>#f9bb72</item>
+        <item>#76afcf</item>
+        <item>#dd6495</item>
+        <item>#72d3b4</item>
+        <item>#563d91</item>
+        <item>#56342e</item>
+        <item>#8c9f58</item>
+    </string-array>
+
+
+</resources>

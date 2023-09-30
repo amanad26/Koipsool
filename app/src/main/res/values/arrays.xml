@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ticks_labels">
+        <item>50,000</item>
+        <item> </item>
+        <item>2,00,000</item>
+        <item> </item>
+        <item>3,00,000</item>
+        <item> </item>
+        <item>4,00,000</item>
+        <item> </item>
+        <item>8,00,000</item>
+        <item> </item>
+        <item>20,00,000</item>
+        <item> </item>
+    </string-array>
+    <string-array name="ticks_labels_bottom">
+        <item> </item>
+        <item>1,00,000</item>
+        <item> </item>
+        <item>2,50,000</item>
+        <item> </item>
+        <item>3,50,000</item>
+        <item> </item>
+        <item>6,00,000</item>
+        <item> </item>
+        <item>10,00,000</item>
+        <item> </item>
+        <item>40,00,000</item>
+    </string-array>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <com.skydoves.elasticviews.ElasticCardView
+        android:id="@+id/my_bids_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdpq"
+        android:layout_marginBottom="@dimen/_3sdpq"
+        android:padding="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdpq">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight=".75"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_bold"
+                android:maxLines="2"
+                android:textFontWeight="600"
+                android:text="Poramin Tablets"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/_8sdp"
+                android:text="Compositions multivitamins with multiminerals and lycopane"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdpq"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/product_batch_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdpq"
+                    android:drawableLeft="@drawable/ic_baseline_circle"
+                    android:drawablePadding="@dimen/_3sdpq"
+                    android:fontFamily="@font/roboto_regular"
+                    android:singleLine="true"
+                    android:text="Batch No : AAkcbudf"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/product_expre_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdpq"
+                    android:drawableLeft="@drawable/ic_baseline_circle"
+                    android:drawablePadding="@dimen/_3sdpq"
+                    android:fontFamily="@font/roboto_regular"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Exp : 15th Aug 2023" android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <TextView
+                    android:id="@+id/product_hsn_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdpq"
+                    android:drawableLeft="@drawable/ic_baseline_circle"
+                    android:drawablePadding="@dimen/_3sdpq"
+                    android:fontFamily="@font/roboto_regular"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="HSN : 15th Aug 2023" android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/product_mrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdpq"
+                    android:drawableLeft="@drawable/ic_baseline_circle"
+                    android:drawablePadding="@dimen/_3sdpq"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:singleLine="true"
+                    android:text="MRP: 1500 per box"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/product_tex_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdpq"
+                    android:drawableLeft="@drawable/ic_baseline_circle"
+                    android:drawablePadding="@dimen/_3sdpq"
+                    android:fontFamily="@font/roboto_regular"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Tax Class: 5%"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+
+                <TextView
+                    android:id="@+id/product_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:background="@drawable/greenboarder"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Edit product "
+                    android:textColor="@color/black"
+                    android:textFontWeight="600" />
+
+
+                <TextView
+                    android:id="@+id/product_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/greenboarder"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Remove "
+                    android:textColor="@color/black"
+                    android:textFontWeight="600" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.skydoves.elasticviews.ElasticCardView>
+
+</LinearLayout>

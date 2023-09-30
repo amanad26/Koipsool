@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:padding="@dimen/_8sdp"
+        android:id="@+id/skill_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Job Profile"
+        android:textColor="@color/txt_chieldform"
+        android:textSize="@dimen/_13sdp" />
+
+
+</LinearLayout>

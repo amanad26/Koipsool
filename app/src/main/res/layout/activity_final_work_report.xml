@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.medical.FinalWorkReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:id="@+id/ic_back"
+            android:contentDescription="@string/ic_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Work Reports"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:src="@drawable/chats"
+            android:padding="@dimen/_15sdpq"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ic_chat"
+            android:contentDescription="@string/ic_back"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report : "
+                android:textSize="@dimen/_16sdp"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_regular"
+                android:textFontWeight="400"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="69i57j0i433i512j0i131i433i512l2j0i512j0i131i433i512j69i61j69i60.1900j0j7"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/gray"
+                android:padding="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:textFontWeight="400"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/next_btn"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/custom_bg_btnn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/ightblue"
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

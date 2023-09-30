@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.pharma.AddMembersActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new"
+        >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Add Members"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_15sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:id="@+id/user_image"
+            android:src="@drawable/user"
+            android:padding="@dimen/_2sdp"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal"
+            app:tint="@color/black"/>
+
+        <EditText
+            android:id="@+id/member_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Name"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/member_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Department"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/member_work_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Work Role"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/member_location_candidate_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/boardergraybackground"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Condidate Id (optional)"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/_20sdp"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdpq"
+            android:id="@+id/continue_btn"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardBackgroundColor="@color/primarycolor"
+            app:cardMaxElevation="@dimen/_3sdp">
+
+
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Invite"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/_7sdp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="@dimen/_16sdp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

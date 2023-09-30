@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.pharma.MyCouponsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:id="@+id/ic_back"
+            android:contentDescription="@string/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="My Coupons"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:src="@drawable/chats" />
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@id/progress_bar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_height="match_parent"
+        android:id="@+id/coupon_recycler"/>
+
+
+</LinearLayout>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RewardsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Rewards"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/chats" />
+
+    </RelativeLayout>
+
+    <com.skydoves.elasticviews.ElasticCardView
+        android:id="@+id/my_bids_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grey_4001"
+        android:layout_marginBottom="@dimen/_3sdpq"
+        android:layout_marginTop="@dimen/_3sdpq"
+        app:cardCornerRadius="@dimen/_5sdpq">
+
+        <LinearLayout
+            android:id="@+id/my_bids_linear"
+            android:weightSum="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/my_bid_car_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:padding="@dimen/_5sdpq"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/glosters"
+                        app:cardCornerRadius="@dimen/_10sdpq"
+                        app:riv_corner_radius="10dp">
+
+
+                    </com.makeramen.roundedimageview.RoundedImageView>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/claim_reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/greenboarder"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdpq"
+                        android:layout_marginTop="@dimen/_5sdpq"
+                        android:layout_marginBottom="@dimen/_5sdpq"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_7sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Claim Reward"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight=".75"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_bid_car_name"
+                    android:textColor="@color/black"
+                    android:text="Butame Pharma Pvt Ltd Poramin Table"
+                    android:textSize="@dimen/_14sdp"
+                    android:maxLines="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_3sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/my_car_model"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:drawableLeft="@drawable/ic_baseline_circle"
+                        android:textColor="@color/gray"
+                        android:text="Compositions: Multivitamin,Multi-minerals, Lycopene,green tea extract "
+                        android:textSize="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/my_bid_manufacture_year"
+                    android:textColor="@color/gray"
+                    android:text="MRP: 150"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/my_bid_owner_name"
+                    android:textColor="@color/gray"
+                    android:text="Batch No: AAKDFB4567N"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/my_bid_car_number"
+                    android:textColor="@color/gray"
+                    android:text="Offer Price: Rs 200 per box Coupon validity: 25th"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/grey_600"/>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.skydoves.elasticviews.ElasticCardView>
+    <com.skydoves.elasticviews.ElasticCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grey_4001"
+        android:layout_marginBottom="@dimen/_3sdpq"
+        android:layout_marginTop="@dimen/_3sdpq"
+        app:cardCornerRadius="@dimen/_5sdpq">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/my_bid_car_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:padding="@dimen/_5sdpq"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/glosters"
+                        app:cardCornerRadius="@dimen/_10sdpq"
+                        app:riv_corner_radius="10dp">
+
+
+                    </com.makeramen.roundedimageview.RoundedImageView>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/products"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/greenboarder"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdpq"
+                        android:layout_marginTop="@dimen/_5sdpq"
+                        android:layout_marginBottom="@dimen/_5sdpq"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_7sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Claim Reward"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight=".75"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_bid_car_names"
+                    android:textColor="@color/black"
+                    android:text="Butame Pharma Pvt Ltd Poramin Table"
+                    android:textSize="@dimen/_14sdp"
+                    android:maxLines="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_3sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/my_car_models"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:drawableLeft="@drawable/ic_baseline_circle"
+                        android:textColor="@color/gray"
+                        android:text="Compositions: Multivitamin,Multi-minerals, Lycopene,green tea extract "
+                        android:textSize="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/my_bid_manufacture_years"
+                    android:textColor="@color/gray"
+                    android:text="MRP: 150"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/my_bid_owner_names"
+                    android:textColor="@color/gray"
+                    android:text="Batch No: AAKDFB4567N"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/my_bid_car_numbers"
+                    android:textColor="@color/gray"
+                    android:text="Offer Price: Rs 200 per box Coupon validity: 25th"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/grey_600"/>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.skydoves.elasticviews.ElasticCardView>
+    <com.skydoves.elasticviews.ElasticCardView
+        android:id="@+id/my_bids_cardViewe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grey_4001"
+        android:layout_marginBottom="@dimen/_3sdpq"
+        android:layout_marginTop="@dimen/_3sdpq"
+        app:cardCornerRadius="@dimen/_5sdpq">
+
+        <LinearLayout
+            android:id="@+id/my_bids_lineare"
+            android:weightSum="2"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/_5sdpq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/producte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/my_bid_car_imagee"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:padding="@dimen/_5sdpq"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/glosters"
+                        app:cardCornerRadius="@dimen/_10sdpq"
+                        app:riv_corner_radius="10dp">
+
+
+                    </com.makeramen.roundedimageview.RoundedImageView>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/producte"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/greenboarder"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/edite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdpq"
+                        android:layout_marginTop="@dimen/_5sdpq"
+                        android:layout_marginBottom="@dimen/_5sdpq"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_7sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:text="Claim Reward"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight=".75"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_bid_car_namee"
+                    android:textColor="@color/black"
+                    android:text="Butame Pharma Pvt Ltd Poramin Table"
+                    android:textSize="@dimen/_14sdp"
+                    android:maxLines="2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_3sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/my_car_modele"
+                        android:layout_marginLeft="@dimen/_7sdpq"
+                        android:drawablePadding="@dimen/_3sdpq"
+                        android:drawableLeft="@drawable/ic_baseline_circle"
+                        android:textColor="@color/gray"
+                        android:text="Compositions: Multivitamin,Multi-minerals, Lycopene,green tea extract "
+                        android:textSize="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/my_bid_manufacture_yeare"
+                    android:textColor="@color/gray"
+                    android:text="MRP: 150"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/my_bid_owner_namee"
+                    android:textColor="@color/gray"
+                    android:text="Batch No: AAKDFB4567N"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/my_bid_car_numbere"
+                    android:textColor="@color/gray"
+                    android:text="Offer Price: Rs 200 per box Coupon validity: 25th"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/grey_600"/>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.skydoves.elasticviews.ElasticCardView>
+
+</LinearLayout>

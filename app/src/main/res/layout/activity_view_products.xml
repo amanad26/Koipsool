@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewProductsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_background_new">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="@dimen/_60sdpq"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ic_back"
+            android:padding="@dimen/_15sdpq"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="products"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/ic_chat"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:src="@drawable/chats" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <com.skydoves.elasticviews.ElasticCardView
+                android:id="@+id/my_bids_cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="@dimen/_3sdpq"
+                android:layout_marginTop="@dimen/_3sdpq"
+                app:cardCornerRadius="@dimen/_5sdpq">
+
+                <LinearLayout
+                    android:id="@+id/my_bids_linear"
+                    android:weightSum="2"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_5sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_weight="1.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdpq">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/my_bid_car_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_5sdpq"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/car1"
+                                app:cardCornerRadius="@dimen/_10sdpq"
+                                app:riv_corner_radius="10dp">
+
+
+                            </com.makeramen.roundedimageview.RoundedImageView>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_weight=".7"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/my_bid_car_name"
+                                android:textColor="@color/black"
+                                android:text="Butema Pharma Povt.limited"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Current City : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" Pune"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Deals in : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" All India"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+
+
+                            <!--  <View
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="@dimen/_1sdp"
+                                  android:background="@color/grey_600"/>-->
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <View
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/grey_600"/>
+
+
+                            <TextView
+                                android:id="@+id/view_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdpq"
+                                android:layout_marginTop="@dimen/_5sdpq"
+                                android:layout_marginEnd="@dimen/_5sdpq"
+                                android:layout_marginBottom="@dimen/_5sdpq"
+                                android:background="@drawable/greenbackground"
+                                android:drawablePadding="@dimen/_5sdpq"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_13sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:text="View Product"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </com.skydoves.elasticviews.ElasticCardView>
+
+            <com.skydoves.elasticviews.ElasticCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="@dimen/_3sdpq"
+                android:layout_marginTop="@dimen/_3sdpq"
+                app:cardCornerRadius="@dimen/_5sdpq">
+
+                <LinearLayout
+
+                    android:weightSum="2"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_5sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_weight="1.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdpq">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_5sdpq"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/car1"
+                                app:cardCornerRadius="@dimen/_10sdpq"
+                                app:riv_corner_radius="10dp">
+
+
+                            </com.makeramen.roundedimageview.RoundedImageView>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_weight=".7"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:text="Butema Pharma Povt.limited"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Current City : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" Pune"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Deals in : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" All India"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+
+
+                            <!--  <View
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="@dimen/_1sdp"
+                                  android:background="@color/grey_600"/>-->
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <View
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/grey_600"/>
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdpq"
+                                android:layout_marginTop="@dimen/_5sdpq"
+                                android:layout_marginEnd="@dimen/_5sdpq"
+                                android:layout_marginBottom="@dimen/_5sdpq"
+                                android:background="@drawable/greenbackground"
+                                android:drawablePadding="@dimen/_5sdpq"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_13sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:text="View Product"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </com.skydoves.elasticviews.ElasticCardView>
+            <com.skydoves.elasticviews.ElasticCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="@dimen/_3sdpq"
+                android:layout_marginTop="@dimen/_3sdpq"
+                app:cardCornerRadius="@dimen/_5sdpq">
+
+                <LinearLayout
+                    android:id="@+id/my_bids_linears"
+                    android:weightSum="2"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_5sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_weight="1.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdpq">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/my_bid_car_images"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_5sdpq"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/car1"
+                                app:cardCornerRadius="@dimen/_10sdpq"
+                                app:riv_corner_radius="10dp">
+
+
+                            </com.makeramen.roundedimageview.RoundedImageView>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_weight=".7"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/my_bid_car_names"
+                                android:textColor="@color/black"
+                                android:text="Butema Pharma Povt.limited"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Current City : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" Pune"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Deals in : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" All India"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+
+
+                            <!--  <View
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="@dimen/_1sdp"
+                                  android:background="@color/grey_600"/>-->
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <View
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/grey_600"/>
+
+
+                            <TextView
+                                android:id="@+id/view_profiles"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdpq"
+                                android:layout_marginTop="@dimen/_5sdpq"
+                                android:layout_marginEnd="@dimen/_5sdpq"
+                                android:layout_marginBottom="@dimen/_5sdpq"
+                                android:background="@drawable/greenbackground"
+                                android:drawablePadding="@dimen/_5sdpq"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_13sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:text="View Product"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </com.skydoves.elasticviews.ElasticCardView>
+
+            <com.skydoves.elasticviews.ElasticCardView
+                android:id="@+id/my_bids_cardViewe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="@dimen/_3sdpq"
+                android:layout_marginTop="@dimen/_3sdpq"
+                app:cardCornerRadius="@dimen/_5sdpq">
+
+                <LinearLayout
+                    android:id="@+id/my_bids_lineare"
+                    android:weightSum="2"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="@dimen/_5sdpq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_weight="1.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdpq">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/my_bid_car_imagee"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_5sdpq"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/car1"
+                                app:cardCornerRadius="@dimen/_10sdpq"
+                                app:riv_corner_radius="10dp">
+
+
+                            </com.makeramen.roundedimageview.RoundedImageView>
+
+                        </RelativeLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_weight=".7"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/my_bid_car_namee"
+                                android:textColor="@color/black"
+                                android:text="Butema Pharma Povt.limited"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Current City : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" Pune"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:text="Deals in : "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text=" All India"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+                            </LinearLayout>
+
+
+                            <!--  <View
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="@dimen/_1sdp"
+                                  android:background="@color/grey_600"/>-->
+
+
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <View
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/grey_600"/>
+
+
+                            <TextView
+                                android:id="@+id/view_profilee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdpq"
+                                android:layout_marginTop="@dimen/_5sdpq"
+                                android:layout_marginEnd="@dimen/_5sdpq"
+                                android:layout_marginBottom="@dimen/_5sdpq"
+                                android:background="@drawable/greenbackground"
+                                android:drawablePadding="@dimen/_5sdpq"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_13sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:text="View Product"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </com.skydoves.elasticviews.ElasticCardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
